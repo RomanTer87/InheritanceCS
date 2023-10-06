@@ -30,7 +30,13 @@ namespace Academy
 		}
 		public override string ToString()
 		{
-			return base.ToString() + " " + $"{ Diplom}";
+			return base.ToString() + ", " + $"{ Diplom}";
+		}
+
+		public override void Init(string[] values)
+		{
+			base.Init(values);
+			Diplom = values[8];
 		}
 		public override void Print()
 		{
