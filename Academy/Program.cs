@@ -73,7 +73,7 @@ namespace Academy
 			List<Human> group = new List<Human>();
 			StreamReader sr = new StreamReader(filename);
 			while (!sr.EndOfStream)
-			{
+			{ 
 				string buffer = sr.ReadLine();
 				string[] values = buffer.Split(':', ',');
 				group.Add(HumanFactory(values[0]));
