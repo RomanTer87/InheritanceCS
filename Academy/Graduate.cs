@@ -36,7 +36,7 @@ namespace Academy
 		public override void Init(string[] values)
 		{
 			base.Init(values);
-			Diplom = values[8];
+			Diplom = values[8].TrimStart().TrimEnd();
 		}
 		public override void Print()
 		{

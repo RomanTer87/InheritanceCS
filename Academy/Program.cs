@@ -70,12 +70,14 @@ namespace Academy
 
 		static Human[] Load(string filename)
 		{
+			Directory.SetCurrentDirectory("..\\..");
+			Console.WriteLine(Directory.GetCurrentDirectory());
 			List<Human> group = new List<Human>();
 			StreamReader sr = new StreamReader(filename);
 			while (!sr.EndOfStream)
 			{ 
 				string buffer = sr.ReadLine();
-				string[] values = buffer.Split(':', ',');
+				string[] values = buffer.Split(':', ',', ';');
 				group.Add(HumanFactory(values[0]));
 				group.Last().Init(values);
 			}
