@@ -65,8 +65,8 @@ namespace AbstractGeometry
 			Console.WriteLine($"Сторона А{ SideA}");
 			Console.WriteLine($"Сторона Б{ SideB}");
 			Console.WriteLine($"Диагональ{ GetDiagonal()}");
-			this.DrawDiagonal(e);
 			this.Draw(e);
+			this.DrawDiagonal(e);
 			base.Info(e);
 		}
 	}
