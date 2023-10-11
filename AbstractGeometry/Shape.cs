@@ -67,7 +67,7 @@ namespace AbstractGeometry
 		{
 			Console.WriteLine($"Площадь фигуры: {this.GetArea()}");
 			Console.WriteLine($"Периметер фигуры: {this.GetPerimeter()}");
-			this.Draw(e);
+			//this.Draw(e);
 			Console.WriteLine();
 		}
 	}

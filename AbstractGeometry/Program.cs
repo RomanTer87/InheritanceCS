@@ -24,6 +24,9 @@ namespace AbstractGeometry
 
 			Rectangle rect = new Rectangle(200, 150, 150, 150, 5, Color.Green);
 			rect.Info(e);
+
+			Square square = new Square(120, 400, 100, 3, Color.Red);
+			square.Info(e);
 		}
 		[DllImport("kernel32.dll")]
 		public static extern IntPtr GetConsoleWindow();

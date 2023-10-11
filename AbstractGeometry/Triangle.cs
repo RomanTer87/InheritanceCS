@@ -47,7 +47,8 @@ namespace AbstractGeometry
 		public Triangle(double side_one, double side_two, double side_three, int start_x, int start_y, int line_width,Color color)
 			:base(start_x, start_y, line_width, color)
 		{
-			double max_side = Triangle.;
+			double max_side = Math.Max(Math.Max(side_one, side_two), side_three);
+			double min_side = Math.Min(Math.Min(side_one, side_two), side_three);
 		}
 	}*/
 }
