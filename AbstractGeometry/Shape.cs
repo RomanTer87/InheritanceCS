@@ -18,6 +18,8 @@ namespace AbstractGeometry
 		public static readonly int MAX_LINE_WIDTH = 32;
 		public static readonly int MIN_SIZE = 20;
 		public static readonly int MAX_SIZE = 500;
+		public static readonly int MIN_RADIUS = 20;
+		public static readonly int MAX_RADIUS = 500;
 		int start_x;
 		int start_y;
 		int line_width;
